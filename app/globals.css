@@ -8,20 +8,70 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "do";
+  src: url("../public/fonts/DOCALLISME ON STREET.ttf");
+}
+
+@font-face {
+  font-family: "LUSER";
+  src: url("../public/fonts/LUSER.ttf");
+}
+
+@font-face {
+  font-family: "SivarPro";
+  src: url("../public/fonts/SivarPro.otf");
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply text-white bg-black;
+  background-image: url('../public/images/background1.jpg');
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  @apply font-SivarPro tracking-wider;
+}
+
+p {
+  @apply text-xl;
+}
+
+.nav-links {
+  @apply text-xl items-center gap-x-5 gap-y-3 flex-wrap lg:flex hidden;
+}
+
+.nav-links a:hover {
+  border-bottom: 4px solid;
+}
+
+.section {
+  @apply w-full min-h-screen grid place-items-center p-5;
+}
+
+.home-container {
+  @apply absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2;
+}
+
+.timer {
+  @apply flex gap-2 text-2xl;
+}
+
+.timer h6 {
+  @apply text-xs;
+}
+
+.event-card {
+  @apply text-black font-bold text-xl flex items-center;
+  background-image: url('../public/images/eventcard.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 340px;
+  height: 110px;
+}
+
+.display-menu {
+  @apply right-0;
 }
