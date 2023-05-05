@@ -63,6 +63,10 @@ p {
   @apply text-xs;
 }
 
+.events-btn-container a:active {
+  @apply brightness-50;
+}
+
 .event-card {
   @apply text-black font-bold text-xl flex items-center;
   background-image: url('../public/images/eventcard.png');

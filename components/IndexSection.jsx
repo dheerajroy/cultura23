@@ -8,7 +8,6 @@ import crownImg from '@/public/images/crown.png'
 import sprayCanImg from '@/public/images/spraycan.png'
 import aheadImg from '@/public/images/ahead.png'
 
-
 export default function IndexSection() {
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
 
@@ -36,12 +35,16 @@ export default function IndexSection() {
     }
     return (
         <Section id="#">
-            <div className='absolute top-1/2 lg:left-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden'>
-                <div className='bg-black/50 w-full lg:w-[500px] h-[500px] max-w-[500px] flex justify-between items-center flex-col p-5 rounded-3xl'>
+            <div className='flex flex-wrap gap-5'>
+                {/* <div className='absolute top-1/2 lg:left-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden'> */}
+                <div className='bg-black/50 gap-3 w-full lg:w-[500px] h-[500px] max-w-[500px] flex justify-between items-center flex-col p-5 rounded-3xl'>
                     <div className='flex min-w-[300px]'>
                         <h1 className='font-LUSER text-6xl text-center'>expression<br /> beyond limit</h1>
                         {/* <Image src={themeImg} className="w-[40em] ml-[50px]" alt='' /> */}
                     </div>
+                    <video controls autoPlay muted loop className="max-w-[300px] lg:hidden sm:block">
+                        <source src="/theme.mp4" type='video/mp4' />
+                    </video>
                     <div className='w-full flex justify-center items-center'>
                         <Image src={aheadImg} className="hidden lg:block w-[200px]" />
                         <div className='flex flex-col items-center font-bold font-SivarPro'>
@@ -52,11 +55,11 @@ export default function IndexSection() {
                                     <h6>DAYS</h6>
                                 </div>
                                 <div>
-                                    {timeLeft.hours}
+                                    {timeLeft.hours - 6 + 24}
                                     <h6>HOURS</h6>
                                 </div>
                                 <div>
-                                    {timeLeft.minutes}
+                                    {timeLeft.minutes - 30 + 60}
                                     <h6>MINUTES</h6>
                                 </div>
                                 <div>
@@ -67,6 +70,9 @@ export default function IndexSection() {
                         </div>
                     </div>
                 </div>
+                <video autoPlay muted loop className="max-w-[700px] hidden lg:block">
+                    <source controls src="/theme.mp4" type='video/mp4' />
+                </video>
             </div>
         </Section>
     )

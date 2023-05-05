@@ -15,7 +15,7 @@ export default function Event({ params }) {
                     <p className="-mt-7 text-center">{event['Description']}</p>
                     <div className="mt-5">
                         <h1 className="font-LUSER text-3xl">Rules and Regulations</h1>
-                        <p dangerouslySetInnerHTML={{ __html: event['Rules and Regulations'].replace(/\n/g, '<br /><br />') }} />
+                        <p className="font-sans" dangerouslySetInnerHTML={{ __html: event['Rules and Regulations'].replace(/\n/g, '<br /><br />') }} />
                     </div>
                     <Link href={`${event['Reg link']}`} target="_blank">
                         <Button className="text-3xl">Register</Button>
