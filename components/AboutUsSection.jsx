@@ -24,6 +24,8 @@ export default function AboutUsSection() {
               <h1><span>Phone Number</span>: <Link href="tel:+918105637085">+91 8105637085</Link></h1>
               <h1><span>Name</span>: Chinmay M</h1>
               <h1><span>Phone Number</span>: <Link href="tel:+918296274447">+91 8296274447</Link></h1>
+              <br />
+              <h1><Link href="emailto:cultura@cmrit.ac.in">cultura@cmrit.ac.in</Link></h1>
             </div>
             <div className='max-w-[300px] font-sans'>
               CMR Institute of Technology<br />
