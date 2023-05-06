@@ -8,9 +8,7 @@ import Image from 'next/image'
 import logo from '@/public/images/logo.png'
 import Button from "./Button"
 
-export default function NavBar() {
-    const [sideBarState, setSideBarState] = useState(false)
-
+export default function NavBar({ sideBarState, setSideBarState }) {
     useEffect(() => {
         let sideBar = document.querySelector('.sidebar')
         let toggleMenu = document.querySelector('.toggle-menu')
