@@ -23,39 +23,39 @@ export default function EventsSection() {
         <Link href="/events#music">
           <Image src={musicImg} />
         </Link>
-        <Link href="/events#dance">
+        {/* <Link href="/events#dance">
           <Image src={danceImg} />
-        </Link>
-        <Link href="/events#literary">
+        </Link> */}
+        {/* <Link href="/events#literary">
           <Image src={literaryImg} />
-        </Link>
+        </Link> */}
         <Link href="/events#photography">
           <Image src={photoImg} />
         </Link>
-        <Link href="/events#digital-media">
+        {/* <Link href="/events#digital-media">
           <Image src={musesImg} />
-        </Link>
+        </Link> */}
         <Link href="/events#theatre">
           <Image src={theatreImg} />
         </Link>
-        <Link href="/events#kannada">
+        {/* <Link href="/events#kannada">
           <Image src={kannadaImg} />
-        </Link>
-        <Link href="/events#art">
+        </Link> */}
+        {/* <Link href="/events#art">
           <Image src={artImg} />
-        </Link>
-        <Link href="/events#fashion">
+        </Link> */}
+        {/* <Link href="/events#fashion">
           <Image src={fashionImg} />
-        </Link>
-        <Link href="/events#informal">
+        </Link> */}
+        {/* <Link href="/events#informal">
           <Image src={informalImg} />
-        </Link>
-        <Link href="/events#technical">
+        </Link> */}
+        {/* <Link href="/events#technical">
           <Image src={techImg} />
-        </Link>
-        <Link href="/events#gaming">
+        </Link> */}
+        {/* <Link href="/events#gaming">
           <Image src={gamingImg} />
-        </Link>
+        </Link> */}
       </div>
     </Section>
   )
