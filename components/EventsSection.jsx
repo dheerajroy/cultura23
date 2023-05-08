@@ -47,15 +47,15 @@ export default function EventsSection() {
         <Link href="/events#fashion">
           <Image src={fashionImg} />
         </Link>
-        {/* <Link href="/events#technical">
+        <Link href="/events#technical">
           <Image src={techImg} />
-        </Link> */}
-        {/* <Link href="/events#informal">
+        </Link>
+        <Link href="/events#informal">
           <Image src={informalImg} />
-        </Link> */}
-        {/* <Link href="/events#gaming">
+        </Link>
+        <Link href="/events#gaming">
           <Image src={gamingImg} />
-        </Link> */}
+        </Link>
       </div>
     </Section>
   )

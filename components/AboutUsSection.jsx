@@ -38,6 +38,10 @@ export default function AboutUsSection() {
             <Link href="https://instagram.com/cmritcultura"><BsInstagram /></Link>
             <Link href="https://facebook.com/Cultura.cmrit"><RiFacebookCircleLine /></Link>
           </div>
+          <div className='mt-5 font-sans [&>*]:font-sans'>
+            Developed By D Dheeraj<br />
+            E-Mail: <Link className='underline underline-offset-4' href="mailto:dhiraajroy123@gmail.com">dhiraajroy123@gmail.com</Link>
+          </div>
         </div>
       </div>
     </Section>

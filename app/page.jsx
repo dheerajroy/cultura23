@@ -8,6 +8,7 @@ import SideBar from '@/components/SideBar'
 export default function Home() {
   return (
     <>
+      {/* Developed by D Dheeraj */}
       <IndexSection />
       <EventsSection />
       {/* <GuestsSection /> */}

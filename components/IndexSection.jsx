@@ -59,7 +59,7 @@ export default function IndexSection() {
                                     <h6>HOURS</h6>
                                 </div>
                                 <div>
-                                    {timeLeft.minutes - 30}
+                                    {timeLeft.minutes}
                                     <h6>MINUTES</h6>
                                 </div>
                                 <div>
