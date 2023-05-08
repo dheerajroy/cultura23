@@ -2,7 +2,6 @@ import EventCard from "@/components/EventCard"
 import EventCardsContainer from "@/components/EventCardsContainer"
 import Section from "@/components/Section"
 import Title from "@/components/Title"
-import Link from "next/link"
 import events from "@/public/finalEvents.json"
 
 export default function Events() {

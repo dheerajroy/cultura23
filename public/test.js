@@ -9,6 +9,6 @@ fs.readFile('events.json', (err, data) => {
 
   fs.writeFile('finalEvents.json', jsonData, (err) => {
     if (err) throw err;
-    console.log('Filtered events data saved to filteredEvents.json');
+    console.log('Filtered events data saved to finalEvents.json');
   });
 });

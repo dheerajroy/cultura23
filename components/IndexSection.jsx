@@ -55,7 +55,7 @@ export default function IndexSection() {
                                     <h6>DAYS</h6>
                                 </div>
                                 <div>
-                                    {timeLeft.hours - 6}
+                                    {timeLeft.hours - 5}
                                     <h6>HOURS</h6>
                                 </div>
                                 <div>
