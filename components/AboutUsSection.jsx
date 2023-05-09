@@ -44,7 +44,7 @@ export default function AboutUsSection() {
           </div>
           <div className='mt-5 font-sans [&>*]:font-sans'>
             Managed By Sarim Haque<br />
-            {/* E-Mail: <Link className='underline underline-offset-4' href="mailto:dhiraajroy123@gmail.com">dhiraajroy123@gmail.com</Link> */}
+            E-Mail: <Link className='underline underline-offset-4' href="mailto:sarim.haq786@gmail.com">sarim.haq786@gmail.com</Link>
           </div>
         </div>
       </div>
