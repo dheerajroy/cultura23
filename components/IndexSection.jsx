@@ -70,9 +70,11 @@ export default function IndexSection() {
                         </div>
                     </div>
                 </div>
-                <video autoPlay controls muted loop className="max-w-[700px] hidden lg:block">
-                    <source src="/theme.mp4" type='video/mp4' />
-                </video>
+                <div className="max-w-[700px] hidden lg:flex items-center">
+                    <video autoPlay controls muted loop>
+                        <source src="/theme.mp4" type='video/mp4' />
+                    </video>
+                </div>
             </div>
         </Section>
     )
