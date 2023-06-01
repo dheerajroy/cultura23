@@ -21,14 +21,14 @@ export default function NavBar({ sideBarState, setSideBarState }) {
     return (
         <nav className='fixed top-0 bg-black/50 w-full px-6 py-2 flex justify-between items-center flex-wrap gap-5 backdrop-blur-lg z-20'>
             <Link href="/">
-                <Image src={logo} width={145} />
+                <Image src={logo} width={145} alt="" />
             </Link>
             <div className='nav-links'>
                 <Link href="/">Home</Link>
                 <Link href="/#events">Events</Link>
                 {/* <Link href="/#guests">Guests</Link> */}
                 <Link href="/#gallery">Gallery</Link>
-                <Link href="/#about-us">About us</Link>
+                <Link href="#about-us">About us</Link>
                 <span>
                 <Link href="https://imjo.in/Pf7D62"><Button>BOOK NOW</Button></Link>
                 </span>
