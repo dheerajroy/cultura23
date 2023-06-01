@@ -3,10 +3,9 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Section from './Section'
-import themeImg from '@/public/images/theme1.png'
-import crownImg from '@/public/images/crown.png'
-import sprayCanImg from '@/public/images/spraycan.png'
 import aheadImg from '@/public/images/ahead.png'
+import Link from 'next/link'
+import Button from './Button'
 
 export default function IndexSection() {
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
@@ -42,9 +41,14 @@ export default function IndexSection() {
                         <h1 className='font-LUSER text-6xl text-center'>expression<br /> beyond limit</h1>
                         {/* <Image src={themeImg} className="w-[40em] ml-[50px]" alt='' /> */}
                     </div>
-                    <video controls autoPlay muted loop className="max-w-[300px] lg:hidden sm:block">
-                        <source src="/theme.mp4" type='video/mp4' />
-                    </video>
+                    <div className="max-w-[300px] lg:hidden sm:block">
+                        <video controls autoPlay muted loop>
+                            <source src="/theme.mp4" type='video/mp4' />
+                        </video>
+                        <center>
+                            <Link href="https://imjo.in/Pf7D62" className="text-3xl"><Button className="mt-5 bg-red-500">BOOK NOW</Button></Link>
+                        </center>
+                    </div>
                     <div className='w-full flex justify-center items-center'>
                         <Image src={aheadImg} className="hidden lg:block w-[200px]" />
                         <div className='flex flex-col items-center font-bold font-SivarPro'>
@@ -70,10 +74,11 @@ export default function IndexSection() {
                         </div>
                     </div>
                 </div>
-                <div className="max-w-[700px] hidden lg:flex items-center">
+                <div className="max-w-[700px] hidden lg:flex flex-col justify-center items-center">
                     <video autoPlay controls muted loop>
                         <source src="/theme.mp4" type='video/mp4' />
                     </video>
+                    <Link href="https://imjo.in/Pf7D62" className="mt-5 text-5xl"><Button className="bg-red-500">BOOK NOW</Button></Link>
                 </div>
             </div>
         </Section>
