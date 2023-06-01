@@ -28,7 +28,7 @@ export default function NavBar({ sideBarState, setSideBarState }) {
                 <Link href="/#events">Events</Link>
                 {/* <Link href="/#guests">Guests</Link> */}
                 <Link href="/#gallery">Gallery</Link>
-                <Link href="#about-us">About us</Link>
+                <Link href="/#about-us">About us</Link>
                 <span>
                 <Link href="https://imjo.in/Pf7D62"><Button>BOOK NOW</Button></Link>
                 </span>
