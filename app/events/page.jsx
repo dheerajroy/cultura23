@@ -8,14 +8,14 @@ export default function Events() {
     return (
         <Section>
             {
-                [...new Set(events.Events.map(event => event.Category))].map(cat => {
+                [...new Set(events.Events.map(event => event.field1))].map(cat => {
                     return (
                         <div id={cat.toLowerCase().replace(/\s+/g, '-')} className="pt-5" key={cat}>
                             <div className="mt-[50px]">
                                 <Title small={true}>{cat}</Title>
                             </div>
                             <EventCardsContainer>
-                                {events.Events.filter(event => event.Category === cat).map(event => {
+                                {events.Events.filter(event => event.field1 === cat).map(event => {
                                     return <EventCard key={event['Event Name']} title={event['Event Name']} clar={event['Event']} description={event['Description']} slug={event['Event Name'].toLowerCase().trim().replace(/\s+/g, '-')} />
                                 })}
                             </EventCardsContainer>

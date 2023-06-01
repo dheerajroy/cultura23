@@ -29,7 +29,9 @@ export default function NavBar({ sideBarState, setSideBarState }) {
                 {/* <Link href="/#guests">Guests</Link> */}
                 <Link href="/#gallery">Gallery</Link>
                 <Link href="/#about-us">About us</Link>
-                {/* <Button>BOOK NOW</Button> */}
+                <span>
+                <Link href="https://imjo.in/Pf7D62"><Button>BOOK NOW</Button></Link>
+                </span>
             </div>
             <div className="lg:hidden toggle-menu text-5xl">
                 {!sideBarState ? <BiMenuAltRight /> : <AiOutlineClose />}

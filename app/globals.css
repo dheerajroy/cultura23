@@ -43,7 +43,7 @@ p {
   @apply text-xl items-center gap-x-5 gap-y-3 flex-wrap lg:flex hidden;
 }
 
-.nav-links a:hover {
+.nav-links > a:hover {
   border-bottom: 4px solid;
 }
 
