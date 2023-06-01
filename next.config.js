@@ -8,11 +8,6 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  exportPathMap: function () {
-    return {
-      '/_redirects': { page: '/_redirects' },
-    };
-  },
 }
 
 module.exports = nextConfig
