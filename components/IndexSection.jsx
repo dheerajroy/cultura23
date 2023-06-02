@@ -41,7 +41,7 @@ export default function IndexSection() {
                         <h1 className='font-LUSER text-6xl text-center'>expression<br /> beyond limits</h1>
                         {/* <Image src={themeImg} className="w-[40em] ml-[50px]" alt='' /> */}
                     </div>
-                    <div className="max-w-[200px] lg:hidden sm:flex">
+                    <div className="max-w-[200px] lg:hidden sm:flex flex-col">
                         <video controls autoPlay muted loop className='rounded-xl'>
                             <source src="/dj.mp4" type='video/mp4' />
                         </video>
