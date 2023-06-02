@@ -9,7 +9,7 @@ export default function Nav() {
     return (
         <>
             <NavBar sideBarState={sideBarState} setSideBarState={setSideBarState} />
-            <SideBar sideBarState={sideBarState} setSideBarState={setSideBarState} />
+            {/* <SideBar sideBarState={sideBarState} setSideBarState={setSideBarState} /> */}
         </>
     )
 }
