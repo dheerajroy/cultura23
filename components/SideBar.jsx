@@ -26,7 +26,7 @@ export default function SideBar({ sideBarState, setSideBarState }) {
                 <Link href="/#gallery">Gallery</Link>
                 <Link href="/#about-us">About us</Link>
                 <Link href="https://imjo.in/Pf7D62">
-                    <Button className='border-red-500 border-2 rounded-full p-2 transition ease-in-out delay-300 hover:bg-red-500'>BOOK TICKET</Button>
+                    <Button>DJ PASS</Button>
                 </Link>
             </div>
         </div>

@@ -30,7 +30,7 @@ export default function NavBar({ sideBarState, setSideBarState }) {
                 <Link href="/#gallery">Gallery</Link>
                 <Link href="/#about-us">About us</Link>
                 <span>
-                    <Link href="https://imjo.in/Pf7D62"><Button>BOOK NOW</Button></Link>
+                    <Link href="https://imjo.in/Pf7D62"><Button>DJ PASS</Button></Link>
                 </span>
             </div>
             <div className="lg:hidden toggle-menu text-5xl">
